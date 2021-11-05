@@ -1,4 +1,4 @@
-package iij_sim_alert
+package handler
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 const apiToken = ""
 const apiUrl = ""
 
-func postChatwork() error {
+func PostChatwork() error {
 	values := url.Values{}
 	values.Set("body", "SIM通信用アラート\ntest")
 

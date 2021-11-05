@@ -1,8 +1,10 @@
-package main
+package config
 
 import (
 	"fmt"
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func loadEnv() (string, string) {
