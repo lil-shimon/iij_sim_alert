@@ -19,3 +19,13 @@ func LoadEnv() (string, string) {
 
 	return tkn, url
 }
+
+func GetSimApiUrl() string {
+	err := godotenv.Load(".env")
+
+	if err != nil {
+		fmt.Printf("failed to read .env >> %v", err)
+	}
+
+	return os.Getenv("SIM_API_URL")
+}
