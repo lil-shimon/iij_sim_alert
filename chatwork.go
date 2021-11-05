@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-const apiToken = "db7a413c746d1fb3defb60e10a7e6382"
-const apiUrl = "https://www.chatwork.com/#!rid205437150"
+const apiToken = ""
+const apiUrl = ""
 
 func postChatwork() error {
 	values := url.Values{}
