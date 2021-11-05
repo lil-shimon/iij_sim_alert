@@ -7,15 +7,15 @@ import (
 	"github.com/joho/godotenv"
 )
 
-func loadEnv() (string, string) {
+func LoadEnv() (string, string) {
 	err := godotenv.Load(".env")
 
 	if err != nil {
 		fmt.Printf("failed to read .env: %v", err)
 	}
 
-	tkn := os.Getenv("API_TOKEN")
-	url := os.Getenv("CHAT_URL")
+	tkn := os.Getenv("TEST_API_TOKEN")
+	url := os.Getenv("TEST_CHAT_URL")
 
 	return tkn, url
 }
